@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html {
+  background-color: rgb(219, 226, 239);
+}
+
+div {
+  background-color: rgb(63, 114, 175);
+  padding: 1rem;
+}
