@@ -1,0 +1,33 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.counter {
+  text-align: center;
+  background-color: rgb(225, 170, 116);
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem 0;
+}
+
+button {
+  display: block;
+  margin: 1rem;
+  margin-left: 25%;
+  width: 50%;
+  margin-right: 25%;
+  background-color: rgb(243, 240, 202);
+  height: 2rem;
+}
+
+.button2{
+  background-color: rgb(153, 176, 128);
+}
+
+.reset{
+  background-color: rgb(225, 170, 116);
+}
