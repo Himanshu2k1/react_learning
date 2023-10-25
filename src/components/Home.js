@@ -6,17 +6,12 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
 	let history = useNavigate();
-
-	// You may skip this part if you're
-	// using react-context api or redux
 	function setID(id, name, age) {
 		localStorage.setItem("id", id);
 		localStorage.setItem("Name", name);
 		localStorage.setItem("Age", age);
 	}
-
-	// Deleted function - functionality
-	// for deleting the entry
+	
 	function deleted(id) {
 		let index = Data
 			.map(function (e) {
