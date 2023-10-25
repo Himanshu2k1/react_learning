@@ -6,24 +6,18 @@ import { v4 as uuid } from "uuid";
 import { Link, useNavigate } from "react-router-dom";
 
 function Add() {
-	// Making usestate for setting and
-	// fetching a value in jsx
 	const [name, setName] = useState("");
 	const [age, setAge] = useState("");
 	const [dept,setDept]=useState("");
 
-	// Using useNavigation for redirecting to pages
 	let history = useNavigate();
 
-	// Function for creating a post/entry
 	const handelSubmit = (e) => {
 		e.preventDefault(); // Prevent reload
 
-		const ids = uuid(); // Creating unique id
-		let uni = ids.slice(0, 8); // Slicing unique id
+		const ids = uuid(); 
+		let uni = ids.slice(0, 8);
 
-		// Fetching a value from usestate and
-		// pushing to javascript object
 		let a = name,
 			b = age,
 			c = dept;
@@ -33,7 +27,6 @@ function Add() {
 		}
 		Data.push({ id: uni, Name: a, Age: b , Dept:c});
 
-		// Redirecting to home page after creation done
 		history("/");
 	};
 
